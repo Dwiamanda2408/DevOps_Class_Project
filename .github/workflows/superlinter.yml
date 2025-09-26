@@ -1,4 +1,3 @@
----
 name: Super-Linter
 on: push
 
@@ -12,6 +11,6 @@ jobs:
 
       - name: Run Super-Linter
         uses: github/super-linter@v4
-        env:
+        env: 
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
